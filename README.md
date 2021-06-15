@@ -4,5 +4,5 @@ For local development
 
 Run
 <pre>git clone https://github.com/tancysam/CodeExp-Unicorns.git 
-     npm install
+</br>  npm install
 </pre>
