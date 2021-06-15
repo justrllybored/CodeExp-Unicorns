@@ -1,6 +1,3 @@
 # Codeexp_unicorns
 
-node_modules not around
-
-.expo and .expo-shared are hidden
-
+node_modules not around; install independently
