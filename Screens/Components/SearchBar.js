@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Text, View, TouchableOpacity, StyleSheet } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 
 export default function SearchBar() {
   return (
@@ -11,9 +11,9 @@ export default function SearchBar() {
 
 const styles = StyleSheet.create({
   Container: {
-    justifyContent: "center",
-    alignContent: "center",
     alignItems: "center",
+    justifyContent: "center",
     textAlign: "center",
+    padding: 20,
   },
 });
