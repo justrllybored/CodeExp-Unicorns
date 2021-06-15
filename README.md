@@ -1,4 +1,6 @@
 # Codeexp_unicorns
-Lets get started
 
-<pre>Here lies me ded</pre>
+node_modules not around
+
+.expo and .expo-shared are hidden
+
