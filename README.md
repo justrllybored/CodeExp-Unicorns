@@ -1,3 +1,11 @@
-# Codeexp_unicorns
+# CodeExp - Team Unicorns
 
-node_modules not around; install independently
+For local development run
+<pre>git clone https://github.com/tancysam/CodeExp-Unicorns.git 
+     npm install
+</pre>
+
+</br>npm install
+</pre>
+
+this si a test
