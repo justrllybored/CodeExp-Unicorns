@@ -1,2 +1,6 @@
 # Codeexp_unicorns
-Lets get started
+
+node_modules not around
+
+.expo and .expo-shared are hidden
+
