@@ -1,10 +1,15 @@
 import * as React from "react";
-import { Text, View } from "react-native";
+import { createStackNavigator } from "@react-navigation/stack";
+import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
+import { Text, View } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { FontAwesome } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 import MapScreen from "./Screens/MapScreen";
 import ProfileScreen from "./Screens/ProfileScreen";
-import { FontAwesome } from "@expo/vector-icons";
+import DiscoverScreen from "./Screens/DiscoverScreen";
+import SearchScreen from "./Screens/DiscoverScreen";
 
 function SettingsScreen() {
   return (
@@ -29,10 +34,17 @@ export default function App() {
               iconName = focused ? "map" : "map-o";
             } else if (route.name === "Profile") {
               iconName = focused ? "user" : "user-o";
+            } else if (route.name === "Discover") {
+              iconName = focused ? "location" : "location-outline";
             }
 
             // You can return any component that you like here!
-            return <FontAwesome name={iconName} size={size} color={color} />;
+            if (route.name === "Map")
+              return <FontAwesome name={iconName} size={size} color={color} />;
+            else if (route.name === "profile")
+              return <FontAwesome name={iconName} size={size} color={color} />;
+            else if (route.name === "Discover")
+              return <Ionicons name={iconName} size={size} color={color} />;
           },
         })}
         tabBarOptions={{
@@ -41,6 +53,7 @@ export default function App() {
         }}
       >
         <Tab.Screen name="Map" component={MapScreen} />
+        <Tab.Screen name="Discover" component={DiscoverScreen} />
         <Tab.Screen name="Profile" component={ProfileScreen} />
       </Tab.Navigator>
     </NavigationContainer>
