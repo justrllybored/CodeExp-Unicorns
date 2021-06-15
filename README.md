@@ -1,10 +1,11 @@
 # CodeExp - Team Unicorns
 
-For local development
-
-Run
+For local development run
 <pre>git clone https://github.com/tancysam/CodeExp-Unicorns.git 
      npm install
 </pre>
 
-this is a test
+</br>npm install
+</pre>
+
+this si a test
