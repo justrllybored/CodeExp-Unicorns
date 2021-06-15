@@ -9,7 +9,6 @@ import { Ionicons } from "@expo/vector-icons";
 import MapScreen from "./Screens/MapScreen";
 import ProfileScreen from "./Screens/ProfileScreen";
 import DiscoverScreen from "./Screens/DiscoverScreen";
-import SearchScreen from "./Screens/DiscoverScreen";
 
 function SettingsScreen() {
   return (
@@ -41,7 +40,7 @@ export default function App() {
             // You can return any component that you like here!
             if (route.name === "Map")
               return <FontAwesome name={iconName} size={size} color={color} />;
-            else if (route.name === "profile")
+            else if (route.name === "Profile")
               return <FontAwesome name={iconName} size={size} color={color} />;
             else if (route.name === "Discover")
               return <Ionicons name={iconName} size={size} color={color} />;
