@@ -7,6 +7,7 @@ import { Ionicons } from "@expo/vector-icons";
 import MapScreen from "./Screens/MapScreen";
 import ProfileScreen from "./Screens/ProfileScreen";
 import DiscoverScreen from "./Screens/DiscoverScreen";
+import BookMarkScreen from "./Screens/BookMarkScreen";
 
 function SettingsScreen() {
   return (
@@ -33,6 +34,8 @@ export default function App() {
               iconName = focused ? "user" : "user-o";
             } else if (route.name === "Discover") {
               iconName = focused ? "location" : "location-outline";
+            } else if (route.name === "BookMarks") {
+              iconName = focused ? "bookmark" : "bookmark-o";
             }
 
             // You can return any component that you like here!
@@ -42,6 +45,8 @@ export default function App() {
               return <FontAwesome name={iconName} size={size} color={color} />;
             else if (route.name === "Discover")
               return <Ionicons name={iconName} size={size} color={color} />;
+            else if (route.name === "BookMarks")
+              return <FontAwesome name={iconName} size={size} color={color} />;
           },
         })}
         tabBarOptions={{
@@ -52,6 +57,7 @@ export default function App() {
         <Tab.Screen name="Map" component={MapScreen} />
         <Tab.Screen name="Discover" component={DiscoverScreen} />
         <Tab.Screen name="Profile" component={ProfileScreen} />
+        <Tab.Screen name="BookMarks" component={BookMarkScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
