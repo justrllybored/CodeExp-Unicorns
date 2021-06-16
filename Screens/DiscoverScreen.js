@@ -5,7 +5,6 @@ import SearchBar from "./Components/SearchBar";
 import { FontAwesome } from "@expo/vector-icons";
 import DiscoverOne from "./Components/DiscoverOne";
 import DiscoverTwo from "./Components/DiscoverTwo";
-import { Searchbar } from 'react-native-paper';
 
 
 
@@ -69,7 +68,8 @@ function DiscoverScreen({ navigation }) {
                   marginLeft: 50,
                   fontSize: 30,
                   fontWeight: "bold",
-                  marginTop: 0,
+                  marginTop: -10,
+                  textAlign:"right",
                 }}
               >
                 125
@@ -80,19 +80,59 @@ function DiscoverScreen({ navigation }) {
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => navigation.navigate("DiscoverTwo")}
-        style={styles.DiscoverTwo}
+        style={styles.DiscoverOne}
       >
-        <Text style={styles.textTitleTwo}>Title</Text>
-        <Text style={styles.textDescriptionTwo}>Description.</Text>
-        <Text style={styles.textRatingTwo}>
-          Ratings:
-          <FontAwesome name="star" size={24} color="black" />
-          <FontAwesome name="star" size={24} color="black" />
-          <FontAwesome name="star" size={24} color="black" />
-          <FontAwesome name="star" size={24} color="black" />
-          <FontAwesome name="star-o" size={24} color="black" />{" "}
-        </Text>
-        <Text style={styles.textPeopleTwo}>People at location: 126</Text>
+        <View style={{ flexDirection: "column" }}>
+          <Text style={styles.textTitleOne}>Botanic Gardens</Text>
+          <View style={{ flexDirection: "row", marginTop: 10 }}>
+            <View style={{ marginLeft: 20 }}>
+              <Text style={styles.textDescriptionOne}>
+              
+              </Text>
+              <Text>Started in 1822 </Text>
+              <Text>by Sir Stamford</Text>
+               <Text>Raffles, the Botanic      </Text>
+               <Text>Gardens is a testa</Text>
+                <Text>-ment to Singapore's</Text>
+              
+              
+            </View>
+            <Image
+              style={styles.imageOne}
+              source={{
+                uri: "https://www.nparks.gov.sg/-/media/nparks-real-content/gardens-parks-and-nature/sg-botanic-gardens/sbgtanglin_gate.jpg",
+              }}
+            />
+          </View>
+          <View style={{ flexDirection: "row" }}>
+            <View>
+              <Text style={styles.textRatingOne}>Ratings:</Text>
+              <View
+                style={{ flexDirection: "row", marginLeft: 20, marginTop: 6 }}
+              >
+                <FontAwesome name="star" size={24} color="black" />
+                <FontAwesome name="star" size={24} color="black" />
+                <FontAwesome name="star" size={24} color="black" />
+                <FontAwesome name="star" size={24} color="black" />
+                <FontAwesome name="star" size={24} color="black" />
+              </View>
+            </View>
+            <View>
+              <Text style={styles.textPeopleOne}>People at location:</Text>
+              <Text
+                style={{
+                  marginLeft: 50,
+                  fontSize: 30,
+                  fontWeight: "bold",
+                  marginTop: -10,
+                  textAlign:"right",
+                }}
+              >
+                30
+              </Text>
+            </View>
+          </View>
+        </View>
       </TouchableOpacity>
     </View>
     </ScrollView>
@@ -113,11 +153,10 @@ export default function DiscoverStack() {
   );
 }
 
-
 const styles = StyleSheet.create({
   Container: {},
   SearchButton: {
-    backgroundColor: "#fbe9e7" ,
+    backgroundColor: "#bdc3c7" ,
     width: "90%",
     borderRadius: 6,
     justifyContent: "center",
@@ -163,11 +202,11 @@ const styles = StyleSheet.create({
     textAlign: "left",
     marginTop: 15,
     marginLeft: 20,
-    fontSize: 25,
+    fontSize: 20,
   },
 
   textPeopleOne: {
-    textAlign: "left",
+    textAlign: "right",
     marginBottom: 5,
     marginLeft: 40,
     marginTop: 15,
@@ -194,12 +233,18 @@ const styles = StyleSheet.create({
     textAlign: "left",
     marginTop: 120,
     marginLeft: 20,
-    fontSize: 25,
+    fontSize: 20,
   },
   iconRatingTwo: {
     marginLeft: 20,
     marginTop: 5,
   },
+  imageTwo: {
+      height: 120,
+      width: 170,
+      marginLeft: 10,
+  },
+
   textPeopleTwo: {
     textAlign: "left",
     marginBottom: 20,
@@ -207,4 +252,5 @@ const styles = StyleSheet.create({
     marginTop: 8,
     fontSize: 20,
   },
+  
 });
