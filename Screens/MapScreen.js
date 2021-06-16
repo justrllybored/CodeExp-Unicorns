@@ -7,7 +7,7 @@ function MapScreen() {
   return (
     <View style={styles.container}>
       <MapView
-       provider={PROVIDER_GOOGLE} // remove if not using Google Maps
+       provider={PROVIDER_GOOGLE} 
        style={styles.map}
        region={{
          latitude: 1.3448,
@@ -22,6 +22,13 @@ function MapScreen() {
   description="A wonderful place to..."
   >
     </Marker>
+    <Marker
+    coordinate={{ latitude : 1.3138 , longitude : 103.8159 }}
+    title="Botanic Gardens"
+    description="Started in 1822 by Sir..."
+    >
+</Marker>
+    
      </MapView>
     </View>
   );
