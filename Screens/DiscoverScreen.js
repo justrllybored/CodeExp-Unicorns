@@ -26,7 +26,7 @@ function DiscoverScreen({ navigation }) {
             style={styles.SearchButton}
           >
             <Text style={styles.SearchText}>
-              <FontAwesome name="search" size={24} color="black" /> Search{" "}
+              <FontAwesome name="search" size={24} color="black" /> Search
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -89,7 +89,8 @@ function DiscoverScreen({ navigation }) {
                     }}
                   >
                     38
-                  </Text></View>
+                  </Text>
+                </View>
               </View>
             </View>
           </TouchableOpacity>
@@ -142,7 +143,7 @@ function DiscoverScreen({ navigation }) {
                       fontSize: 30,
                       fontWeight: "bold",
                       marginTop: -10,
-                      textAlign:"right"
+                      textAlign: "right",
                     }}
                   >
                     30
@@ -161,12 +162,12 @@ function DiscoverScreen({ navigation }) {
               <View style={{ flexDirection: "row", marginTop: 10 }}>
                 <View style={{ marginLeft: 20 }}>
                   <Text style={styles.textDescriptionThree}>
-                    Started in 1822
+                    Japanese Cemetery
                   </Text>
-                  <Text>by Sir Stamford</Text>
-                  <Text>Raffles, the Botanic </Text>
-                  <Text>Gardens is a testa</Text>
-                  <Text>-ment to Singapore's</Text>
+                  <Text>Park is an important</Text>
+                  <Text>location for the</Text>
+                  <Text>Japanese Legacy in</Text>
+                  <Text>Singapore...</Text>
                   <Text>(Click to find out</Text>
                   <Text>more about this place)</Text>
                 </View>
@@ -204,7 +205,7 @@ function DiscoverScreen({ navigation }) {
                       fontSize: 30,
                       fontWeight: "bold",
                       marginTop: -10,
-                      textAlign:"right"
+                      textAlign: "right",
                     }}
                   >
                     19
