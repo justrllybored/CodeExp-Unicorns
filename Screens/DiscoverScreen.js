@@ -1,13 +1,20 @@
 import * as React from "react";
-import { Text, View, TouchableOpacity, StyleSheet, Image } from "react-native";
+import { Text, View, TouchableOpacity, StyleSheet, Image,  SafeAreaView, ScrollView, StatusBar } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import SearchBar from "./Components/SearchBar";
 import { FontAwesome } from "@expo/vector-icons";
 import DiscoverOne from "./Components/DiscoverOne";
 import DiscoverTwo from "./Components/DiscoverTwo";
+import { Searchbar } from 'react-native-paper';
+
+
 
 function DiscoverScreen({ navigation }) {
   return (
+
+    <SafeAreaView style={styles.container}>
+      <ScrollView style={styles.scrollView}>
+
     <View style={styles.Container}>
       <TouchableOpacity
         onPress={() => navigation.navigate("Search")}
@@ -65,7 +72,7 @@ function DiscoverScreen({ navigation }) {
                   marginTop: 0,
                 }}
               >
-                69
+                125
               </Text>
             </View>
           </View>
@@ -88,6 +95,8 @@ function DiscoverScreen({ navigation }) {
         <Text style={styles.textPeopleTwo}>People at location: 126</Text>
       </TouchableOpacity>
     </View>
+    </ScrollView>
+    </SafeAreaView>
   );
 }
 
@@ -103,6 +112,7 @@ export default function DiscoverStack() {
     </Stack.Navigator>
   );
 }
+
 
 const styles = StyleSheet.create({
   Container: {},
