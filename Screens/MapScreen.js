@@ -10,10 +10,10 @@ function MapScreen() {
        provider={PROVIDER_GOOGLE} 
        style={styles.map}
        region={{
-         latitude: 1.3448,
-         longitude: 103.8224,
-         latitudeDelta: 0.015,
-         longitudeDelta: 0.0121,
+         latitude: 1.330718,
+         longitude: 103.822342,
+         latitudeDelta: 0.05,
+         longitudeDelta: 0.05,
        }}
      >
   <Marker
