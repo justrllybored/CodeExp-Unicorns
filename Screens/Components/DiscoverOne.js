@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Text, View, StyleSheet, Image } from "react-native";
+import { Text, View, StyleSheet, Image, Button } from "react-native";
 
 export default function DiscoverOne() {
   return (
@@ -32,6 +32,7 @@ export default function DiscoverOne() {
         ALERT!: Please be aware that there was a Covid-19 cluster discovered
         here on the 10th of June. Refer to the MOH website for more details
       </Text>
+      <Button title="Add to Bookmarks"></Button>
     </View>
   );
 }
