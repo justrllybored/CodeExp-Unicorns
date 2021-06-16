@@ -1,11 +1,28 @@
 import * as React from "react";
-import { Text, View, TouchableOpacity, StyleSheet } from "react-native";
+import { Text, View, TouchableOpacity, StyleSheet, Dimensions, Image } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
+import MapView, { PROVIDER_GOOGLE , Marker, Callout } from 'react-native-maps';
 
 function MapScreen() {
   return (
     <View style={styles.container}>
-      <Text>Map!</Text>
+      <MapView
+       provider={PROVIDER_GOOGLE} // remove if not using Google Maps
+       style={styles.map}
+       region={{
+         latitude: 1.3448,
+         longitude: 103.8224,
+         latitudeDelta: 0.015,
+         longitudeDelta: 0.0121,
+       }}
+     >
+  <Marker
+  coordinate={{ latitude : 1.3448 , longitude : 103.8224 }}
+  title="Macritchie Reservoir"
+  description="A wonderful place to..."
+  >
+    </Marker>
+     </MapView>
     </View>
   );
 }
@@ -13,8 +30,13 @@ function MapScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  map: {
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height,
   },
 });
 const Stack = createStackNavigator();
