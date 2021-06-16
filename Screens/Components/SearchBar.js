@@ -4,7 +4,7 @@ import { Text, View, StyleSheet } from "react-native";
 export default function SearchBar() {
   return (
     <View style={styles.Container}>
-      <Text>Hello</Text>
+      <Text>Placeholder</Text>
     </View>
   );
 }
