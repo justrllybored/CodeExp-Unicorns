@@ -4,7 +4,7 @@ import { Text, View, Button, StyleSheet, Image } from "react-native";
 export default function CloseFriendListScreen() {
   const simpleAlert = () => {
     alert(
-      "Warning!!! Please be aware that there was a Covid-19 cluster detected here on 10 June 2021, please refer to the MOH website for more info "
+      "Warning!!! Please be aware that there was a Covid-19 cluster detected here on 10 June 2021, please refer to the MOH website for more details "
     );
   };
 
