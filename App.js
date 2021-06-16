@@ -5,7 +5,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { FontAwesome } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import MapScreen from "./Screens/MapScreen";
-import ProfileScreen from "./Screens/ProfileScreen";
+import SocialScreen from "./Screens/SocialScreen";
 import DiscoverScreen from "./Screens/DiscoverScreen";
 import BookMarkScreen from "./Screens/BookMarkScreen";
 
@@ -22,8 +22,8 @@ export default function App() {
             //Set the icon based on which route it is (name of the tab)
             if (route.name === "Map") {
               iconName = focused ? "map" : "map-o";
-            } else if (route.name === "Profile") {
-              iconName = focused ? "user" : "user-o";
+            } else if (route.name === "Social") {
+              iconName = "users";
             } else if (route.name === "Discover") {
               iconName = focused ? "location" : "location-outline";
             } else if (route.name === "BookMarks") {
@@ -33,7 +33,7 @@ export default function App() {
             // You can return any component that you like here!
             if (route.name === "Map")
               return <FontAwesome name={iconName} size={size} color={color} />;
-            else if (route.name === "Profile")
+            else if (route.name === "Social")
               return <FontAwesome name={iconName} size={size} color={color} />;
             else if (route.name === "Discover")
               return <Ionicons name={iconName} size={size} color={color} />;
@@ -49,7 +49,7 @@ export default function App() {
         <Tab.Screen name="Map" component={MapScreen} />
         <Tab.Screen name="Discover" component={DiscoverScreen} />
         <Tab.Screen name="BookMarks" component={BookMarkScreen} />
-        <Tab.Screen name="Profile" component={ProfileScreen} />
+        <Tab.Screen name="Social" component={SocialScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );

@@ -29,71 +29,7 @@ function DiscoverScreen({ navigation }) {
               <FontAwesome name="search" size={24} color="black" /> Search
             </Text>
           </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => navigation.navigate("DiscoverOne")}
-            style={styles.DiscoverOne}
-          >
-            <View style={{ flexDirection: "column" }}>
-              <Text style={styles.textTitleOne}>Macritchie Reservoir</Text>
-              <View style={{ flexDirection: "row", marginTop: 10 }}>
-                <View style={{ marginLeft: 20 }}>
-                  <Text style={styles.textDescriptionOne}>
-                    Macritchie Reservoir
-                  </Text>
-                  <Text>is a wonderful place</Text>
-                  <Text>to spend your day</Text>
-                  <Text>with your family and</Text>
-                  <Text>friends. You can...</Text>
-                  <Text>(Click to find out</Text>
-                  <Text>more about this place)</Text>
-                </View>
-                <Image
-                  style={styles.imageOne}
-                  source={{
-                    uri: "https://lp-cms-production.imgix.net/2019-06/a2aa48e66952bf8816898991072e32f5-macritchie-reservoir.jpg",
-                  }}
-                />
-              </View>
-              <View style={{ flexDirection: "row" }}>
-                <View>
-                  <Text style={styles.textRatingOne}>Ratings:</Text>
-                  <View
-                    style={{
-                      flexDirection: "row",
-                      marginLeft: 20,
-                      marginTop: 6,
-                    }}
-                  >
-                    <FontAwesome name="star" size={24} color="black" />
-                    <FontAwesome name="star" size={24} color="black" />
-                    <FontAwesome name="star" size={24} color="black" />
-                    <FontAwesome name="star" size={24} color="black" />
-                    <FontAwesome
-                      name="star-half-full"
-                      size={24}
-                      color="black"
-                    />
-                  </View>
-                </View>
-                <View>
-                  <Text style={styles.textPeopleThree}>
-                    People at location:
-                  </Text>
-                  <Text
-                    style={{
-                      marginLeft: 50,
-                      fontSize: 30,
-                      fontWeight: "bold",
-                      marginTop: -10,
-                      textAlign: "right",
-                    }}
-                  >
-                    38
-                  </Text>
-                </View>
-              </View>
-            </View>
-          </TouchableOpacity>
+
           <TouchableOpacity
             onPress={() => navigation.navigate("DiscoverTwo")}
             style={styles.DiscoverTwo}
@@ -152,7 +88,71 @@ function DiscoverScreen({ navigation }) {
               </View>
             </View>
           </TouchableOpacity>
-
+          <TouchableOpacity
+            onPress={() => navigation.navigate("DiscoverOne")}
+            style={styles.DiscoverOne}
+          >
+            <View style={{ flexDirection: "column" }}>
+              <Text style={styles.textTitleOne}>Macritchie Reservoir</Text>
+              <View style={{ flexDirection: "row", marginTop: 0 }}>
+                <View style={{ marginLeft: 20 }}>
+                  <Text style={styles.textDescriptionOne}>
+                    Macritchie Reservoir
+                  </Text>
+                  <Text>is a wonderful place</Text>
+                  <Text>to spend your day</Text>
+                  <Text>with your family and</Text>
+                  <Text>friends. You can...</Text>
+                  <Text>(Click to find out</Text>
+                  <Text>more about this place)</Text>
+                </View>
+                <Image
+                  style={styles.imageOne}
+                  source={{
+                    uri: "https://lp-cms-production.imgix.net/2019-06/a2aa48e66952bf8816898991072e32f5-macritchie-reservoir.jpg",
+                  }}
+                />
+              </View>
+              <View style={{ flexDirection: "row" }}>
+                <View>
+                  <Text style={styles.textRatingOne}>Ratings:</Text>
+                  <View
+                    style={{
+                      flexDirection: "row",
+                      marginLeft: 20,
+                      marginTop: 6,
+                    }}
+                  >
+                    <FontAwesome name="star" size={24} color="black" />
+                    <FontAwesome name="star" size={24} color="black" />
+                    <FontAwesome name="star" size={24} color="black" />
+                    <FontAwesome name="star" size={24} color="black" />
+                    <FontAwesome
+                      name="star-half-full"
+                      size={24}
+                      color="black"
+                    />
+                  </View>
+                </View>
+                <View>
+                  <Text style={styles.textPeopleThree}>
+                    People at location:
+                  </Text>
+                  <Text
+                    style={{
+                      marginLeft: 50,
+                      fontSize: 30,
+                      fontWeight: "bold",
+                      marginTop: -10,
+                      textAlign: "right",
+                    }}
+                  >
+                    38
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </TouchableOpacity>
           <TouchableOpacity
             onPress={() => navigation.navigate("DiscoverThree")}
             style={styles.DiscoverThree}
@@ -257,7 +257,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 6,
     height: 300,
-    marginTop: 35,
+    marginTop: 10,
     marginBottom: 8,
   },
   DiscoverTwo: {
@@ -267,7 +267,8 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 6,
     height: 300,
-    margin: 10,
+    marginTop: 35,
+    marginBottom: 8,
   },
   DiscoverThree: {
     backgroundColor: "#ffa270",
