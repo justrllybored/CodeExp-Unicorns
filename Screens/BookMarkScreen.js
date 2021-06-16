@@ -2,11 +2,21 @@ import * as React from "react";
 import { Text, View, TouchableOpacity, StyleSheet } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 
-function MapScreen() {
+function BookMarkScreen() {
   return (
     <View style={styles.container}>
-      <Text>Map!</Text>
+      <Text>BookMarks!</Text>
     </View>
+  );
+}
+
+const Stack = createStackNavigator();
+
+export default function BookMarkStack() {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name="BookMarks" component={BookMarkScreen} />
+    </Stack.Navigator>
   );
 }
 
@@ -17,12 +27,3 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 });
-const Stack = createStackNavigator();
-
-export default function MapStack() {
-  return (
-    <Stack.Navigator>
-      <Stack.Screen name="Map" component={MapScreen} />
-    </Stack.Navigator>
-  );
-}

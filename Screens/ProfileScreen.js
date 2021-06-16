@@ -6,18 +6,19 @@ function ProfileScreen() {
   return (
     <View style={styles.container}>
       <Text>Profile</Text>
-      <TouchableOpacity onPress={onPress}></TouchableOpacity>
+      <TouchableOpacity onPress={{}}></TouchableOpacity>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-    container:{
-     flex: 1, 
-     justifyContent: "center",
-     alignItems: "center" 
-    }
-})
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});
+
 const Stack = createStackNavigator();
 
 export default function ProfileStack() {
