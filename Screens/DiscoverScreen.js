@@ -75,6 +75,21 @@ function DiscoverScreen({ navigation }) {
                     />
                   </View>
                 </View>
+                <View>
+                  <Text style={styles.textPeopleThree}>
+                    People at location:
+                  </Text>
+                  <Text
+                    style={{
+                      marginLeft: 50,
+                      fontSize: 30,
+                      fontWeight: "bold",
+                      marginTop: -10,
+                      textAlign: "right",
+                    }}
+                  >
+                    38
+                  </Text></View>
               </View>
             </View>
           </TouchableOpacity>
@@ -126,7 +141,8 @@ function DiscoverScreen({ navigation }) {
                       marginLeft: 50,
                       fontSize: 30,
                       fontWeight: "bold",
-                      marginTop: 0,
+                      marginTop: -10,
+                      textAlign:"right"
                     }}
                   >
                     30
@@ -141,7 +157,7 @@ function DiscoverScreen({ navigation }) {
             style={styles.DiscoverThree}
           >
             <View style={{ flexDirection: "column" }}>
-              <Text style={styles.textTitleThree}>Japanese Cemetary Park</Text>
+              <Text style={styles.textTitleThree}>Japanese Cemetery Park</Text>
               <View style={{ flexDirection: "row", marginTop: 10 }}>
                 <View style={{ marginLeft: 20 }}>
                   <Text style={styles.textDescriptionThree}>
@@ -187,10 +203,11 @@ function DiscoverScreen({ navigation }) {
                       marginLeft: 50,
                       fontSize: 30,
                       fontWeight: "bold",
-                      marginTop: 0,
+                      marginTop: -10,
+                      textAlign:"right"
                     }}
                   >
-                    38
+                    19
                   </Text>
                 </View>
               </View>

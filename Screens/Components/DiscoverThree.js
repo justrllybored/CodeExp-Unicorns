@@ -18,19 +18,15 @@ export default function DiscoverThree() {
           textAlign: "center",
         }}
       >
-        Macritchie Reservoir
+        Japanese Cemetery Park
       </Text>
       <Text
         style={{ marginTop: 20, fontSize: 20, textAlign: "left", margin: 10 }}
       >
-        Macritchie Resevoir is a wonderful place to spend your day with your
-        family and friends. You can choose to hold a picnic with your buddies,
-        or play some games with your children. Just remember to bring along
-        mosquito repellent to avoid getting your body covered in mosquito bites!
+        Japanese Cemetery Park is an important location for the Japanese legacy in Singapore. Covering over 30,000 meters of land, the park is a beautiful showcase of Japanese culture and beauty. Please be reminded to be respectful within the park.
       </Text>
       <Text style={{ fontsize: 15, margin: 10 }}>
-        ALERT!: Please be aware that there was a Covid-19 cluster discovered
-        here on the 10th of June. Refer to the MOH website for more details
+        ALERT!: The park will be undergoing renovations from the 13th of June to the 20th of June.
       </Text>
     </View>
   );
