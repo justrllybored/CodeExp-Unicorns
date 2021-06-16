@@ -5,6 +5,4 @@ For local development run
      npm install
 </pre>
 
-</br>npm install
-</pre>
-
+**IN DEVELOPMENT**
