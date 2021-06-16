@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "CODE_EXP-v1.1",
-    "slug": "CODE_EXP-v1.1",
+    "slug": "codexp11",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -23,7 +23,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.samtestbuild.sgdiscovery"
     },
     "web": {
       "favicon": "./assets/favicon.png"

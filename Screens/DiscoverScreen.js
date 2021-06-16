@@ -107,9 +107,9 @@ export default function DiscoverStack() {
 const styles = StyleSheet.create({
   Container: {},
   SearchButton: {
-    backgroundColor: "lightyellow",
+    backgroundColor: "#fbe9e7" ,
     width: "90%",
-    borderRadius: 20,
+    borderRadius: 6,
     justifyContent: "center",
     alignItems: "center",
     alignContent: "center",
@@ -121,21 +121,21 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   DiscoverOne: {
-    backgroundColor: "lightblue",
+    backgroundColor: "#ffa270",
     width: "90%",
     alignSelf: "center",
     padding: 10,
-    borderRadius: 20,
+    borderRadius: 6,
     height: 300,
     marginTop: 35,
     marginBottom: 8,
   },
   DiscoverTwo: {
-    backgroundColor: "lightblue",
+    backgroundColor: "#ffa270",
     width: "90%",
     alignSelf: "center",
     padding: 10,
-    borderRadius: 20,
+    borderRadius: 6,
     height: 300,
     margin: 10,
   },
@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   textDescriptionOne: {
-    marginTop: 20,
+    marginTop: 0,
     fontSize: 15,
   },
   textRatingOne: {
