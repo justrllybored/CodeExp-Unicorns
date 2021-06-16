@@ -1,13 +1,13 @@
 import * as React from "react";
 import { Text, View, StyleSheet, Image } from "react-native";
 
-export default function DiscoverOne() {
+export default function DiscoverThree() {
   return (
     <View style={styles.DiscoverOne}>
       <Image
         style={styles.imageOne}
         source={{
-          uri: "https://lp-cms-production.imgix.net/2019-06/a2aa48e66952bf8816898991072e32f5-macritchie-reservoir.jpg",
+          uri: "https://static.mothership.sg/1/2019/07/japanese-cemetery.png",
         }}
       />
       <Text

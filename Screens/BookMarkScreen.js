@@ -69,18 +69,18 @@ function BookMarksScreen({ route, navigation }) {
   // Responds to coming back from the add screen
   useEffect(() => {
     if (route.params?.todoText) {
-      const newNote = {
+      const newBookMark = {
         title: route.params.todoText,
         id: BookMarks.length.toString(),
         done: false,
       };
-      setBookMarks([...BookMarks, newNote]);
-      // const newNote = {
+      setBookMarks([...BookMarks, newBookMark]);
+      // const newBookMark = {
       //   title: route.params.todoText,
       //   id: BookMarks.length.toString(),
       //   done: false,
       // };
-      // setBookMarks([...BookMarks, newNote]);
+      // setBookMarks([...BookMarks, newBookMark]);
       db.transaction(
         (tx) => {
           tx.executeSql("INSERT INTO BookMarks (done, title) VALUES (0, ?)", [

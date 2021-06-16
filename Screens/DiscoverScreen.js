@@ -5,6 +5,7 @@ import SearchBar from "./Components/SearchBar";
 import { FontAwesome } from "@expo/vector-icons";
 import DiscoverOne from "./Components/DiscoverOne";
 import DiscoverTwo from "./Components/DiscoverTwo";
+import DiscoverThree from "./Components/DiscoverThree";
 
 
 
@@ -61,7 +62,64 @@ function DiscoverScreen({ navigation }) {
                 <FontAwesome name="star-half-full" size={24} color="black" />
               </View>
             </View>
-            <View>
+//Start of conflict zj code
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("DiscoverTwo")}
+            style={styles.DiscoverTwo}
+          >
+            <View style={{ flexDirection: "column" }}>
+              <Text style={styles.textTitleTwo}>Botanic Gardens</Text>
+              <View style={{ flexDirection: "row", marginTop: 10 }}>
+                <View style={{ marginLeft: 20 }}>
+                  <Text style={styles.textDescriptionTwo}>Started in 1822</Text>
+                  <Text>by Sir Stamford</Text>
+                  <Text>Raffles, the Botanic </Text>
+                  <Text>Gardens is a testa</Text>
+                  <Text>-ment to Singapore's</Text>
+                  <Text>(Click to find out</Text>
+                  <Text>more about this place)</Text>
+                </View>
+                <Image
+                  style={styles.imageTwo}
+                  source={{
+                    uri: "https://www.nparks.gov.sg/-/media/nparks-real-content/gardens-parks-and-nature/sg-botanic-gardens/sbgtanglin_gate.jpg",
+                  }}
+                />
+              </View>
+              <View style={{ flexDirection: "row" }}>
+                <View>
+                  <Text style={styles.textRatingTwo}>Ratings:</Text>
+                  <View
+                    style={{
+                      flexDirection: "row",
+                      marginLeft: 20,
+                      marginTop: 6,
+                    }}
+                  >
+                    <FontAwesome name="star" size={24} color="black" />
+                    <FontAwesome name="star" size={24} color="black" />
+                    <FontAwesome name="star" size={24} color="black" />
+                    <FontAwesome name="star" size={24} color="black" />
+                    <FontAwesome name="star" size={24} color="black" />
+                  </View>
+                </View>
+                <View>
+                  <Text style={styles.textPeopleTwo}>People at location:</Text>
+                  <Text
+                    style={{
+                      marginLeft: 50,
+                      marginLeft: 50,
+                      fontSize: 30,
+                      fontWeight: "bold",
+                      marginTop: 0,
+                    }}
+                  >
+                    30
+                  </Text>
+                </View>
+
+ /*           <View>
               <Text style={styles.textPeopleOne}>People at location:</Text>
               <Text
                 style={{
@@ -115,27 +173,79 @@ function DiscoverScreen({ navigation }) {
                 <FontAwesome name="star" size={24} color="black" />
                 <FontAwesome name="star" size={24} color="black" />
                 <FontAwesome name="star" size={24} color="black" />
+*/
               </View>
             </View>
-            <View>
-              <Text style={styles.textPeopleOne}>People at location:</Text>
-              <Text
-                style={{
-                  marginLeft: 50,
-                  fontSize: 30,
-                  fontWeight: "bold",
-                  marginTop: -10,
-                  textAlign:"right",
-                }}
-              >
-                30
-              </Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={() => navigation.navigate("DiscoverThree")}
+            style={styles.DiscoverThree}
+          >
+            <View style={{ flexDirection: "column" }}>
+              <Text style={styles.textTitleThree}>Japanese Cemetary Park</Text>
+              <View style={{ flexDirection: "row", marginTop: 10 }}>
+                <View style={{ marginLeft: 20 }}>
+                  <Text style={styles.textDescriptionThree}>
+                    Started in 1822
+                  </Text>
+                  <Text>by Sir Stamford</Text>
+                  <Text>Raffles, the Botanic </Text>
+                  <Text>Gardens is a testa</Text>
+                  <Text>-ment to Singapore's</Text>
+                  <Text>(Click to find out</Text>
+                  <Text>more about this place)</Text>
+                </View>
+                <Image
+                  style={styles.imageThree}
+                  source={{
+                    uri: "https://static.mothership.sg/1/2019/07/japanese-cemetery.png",
+                  }}
+                />
+              </View>
+              <View style={{ flexDirection: "row" }}>
+                <View>
+                  <Text style={styles.textRatingThree}>Ratings:</Text>
+                  <View
+                    style={{
+                      flexDirection: "row",
+                      marginLeft: 20,
+                      marginTop: 6,
+                    }}
+                  >
+                    <FontAwesome name="star" size={24} color="black" />
+                    <FontAwesome name="star" size={24} color="black" />
+                    <FontAwesome name="star" size={24} color="black" />
+                    <FontAwesome name="star" size={24} color="black" />
+                    <FontAwesome name="star-o" size={24} color="black" />
+                  </View>
+                </View>
+                <View>
+                  <Text style={styles.textPeopleThree}>
+                    People at location:
+                  </Text>
+                  <Text
+                    style={{
+                      marginLeft: 50,
+                      fontSize: 30,
+                      fontWeight: "bold",
+                      marginTop: 0,
+                    }}
+                  >
+                    38
+                  </Text>
+                </View>
+              </View>
             </View>
-          </View>
+          </TouchableOpacity>
         </View>
+//zj code conflict
+      </ScrollView>
+/*
       </TouchableOpacity>
     </View>
     </ScrollView>
+*/
     </SafeAreaView>
   );
 }
@@ -149,6 +259,7 @@ export default function DiscoverStack() {
       <Stack.Screen name="Search" component={SearchBar} />
       <Stack.Screen name="DiscoverOne" component={DiscoverOne} />
       <Stack.Screen name="DiscoverTwo" component={DiscoverTwo} />
+      <Stack.Screen name="DiscoverThree" component={DiscoverThree} />
     </Stack.Navigator>
   );
 }
@@ -156,7 +267,8 @@ export default function DiscoverStack() {
 const styles = StyleSheet.create({
   Container: {},
   SearchButton: {
-    backgroundColor: "#bdc3c7" ,
+
+    backgroundColor: "#bdc3c7",
     width: "90%",
     borderRadius: 6,
     justifyContent: "center",
@@ -180,6 +292,15 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   DiscoverTwo: {
+    backgroundColor: "#ffa270",
+    width: "90%",
+    alignSelf: "center",
+    padding: 10,
+    borderRadius: 6,
+    height: 300,
+    margin: 10,
+  },
+  DiscoverThree: {
     backgroundColor: "#ffa270",
     width: "90%",
     alignSelf: "center",
@@ -220,18 +341,16 @@ const styles = StyleSheet.create({
   textTitleTwo: {
     fontWeight: "bold",
     fontSize: 30,
-    textAlign: "left",
+    textAlign: "center",
     marginTop: 20,
-    marginLeft: 20,
   },
   textDescriptionTwo: {
-    marginTop: 20,
-    marginLeft: 20,
+    marginTop: 0,
     fontSize: 15,
   },
   textRatingTwo: {
     textAlign: "left",
-    marginTop: 120,
+    marginTop: 15,
     marginLeft: 20,
     fontSize: 20,
   },
@@ -240,17 +359,49 @@ const styles = StyleSheet.create({
     marginTop: 5,
   },
   imageTwo: {
-      height: 120,
-      width: 170,
-      marginLeft: 10,
+    height: 120,
+    width: 170,
+    marginLeft: 10,
   },
 
   textPeopleTwo: {
-    textAlign: "left",
-    marginBottom: 20,
-    marginLeft: 20,
-    marginTop: 8,
+    textAlign: "right",
+    marginBottom: 5,
+    marginLeft: 40,
+    marginTop: 15,
     fontSize: 20,
   },
-  
+  textTitleThree: {
+    fontWeight: "bold",
+    fontSize: 30,
+    textAlign: "center",
+    marginTop: 20,
+  },
+  textDescriptionThree: {
+    marginTop: 0,
+    fontSize: 15,
+  },
+  textRatingThree: {
+    textAlign: "left",
+    marginTop: 15,
+    marginLeft: 20,
+    fontSize: 20,
+  },
+  iconRatingThree: {
+    marginLeft: 20,
+    marginTop: 5,
+  },
+  imageThree: {
+    height: 120,
+    width: 170,
+    marginLeft: 10,
+  },
+
+  textPeopleThree: {
+    textAlign: "right",
+    marginBottom: 5,
+    marginLeft: 40,
+    marginTop: 15,
+    fontSize: 20,
+  },
 });
