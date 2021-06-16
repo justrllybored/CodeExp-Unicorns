@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Text, View, TouchableOpacity, StyleSheet } from "react-native";
+import { Text, View, TouchableOpacity, StyleSheet, Image } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import SearchBar from "./Components/SearchBar";
 import { FontAwesome } from "@expo/vector-icons";
@@ -21,24 +21,62 @@ function DiscoverScreen({ navigation }) {
         onPress={() => navigation.navigate("DiscoverOne")}
         style={styles.DiscoverOne}
       >
-        <Text style={styles.textTitleOne}>Title</Text>
-        <Text style={styles.textDescriptionOne}>Description</Text>
-        <Text style={styles.textRatingOne}>
-          Ratings:
-          <FontAwesome name="star" size={24} color="black" />
-          <FontAwesome name="star" size={24} color="black" />
-          <FontAwesome name="star" size={24} color="black" />
-          <FontAwesome name="star" size={24} color="black" />
-          <FontAwesome name="star-half-full" size={24} color="black" />
-        </Text>
-        <Text style={styles.textPeopleOne}>People at location: 69</Text>
+        <View style={{ flexDirection: "column" }}>
+          <Text style={styles.textTitleOne}>Macritchie Reservoir</Text>
+          <View style={{ flexDirection: "row", marginTop: 10 }}>
+            <View style={{ marginLeft: 20 }}>
+              <Text style={styles.textDescriptionOne}>
+                Macritchie Reservoir
+              </Text>
+              <Text>is a wonderful place</Text>
+              <Text>to spend your day</Text>
+              <Text>with your family and</Text>
+              <Text>friends. You can...</Text>
+              <Text>(Click to find out</Text>
+              <Text>more about this place)</Text>
+            </View>
+            <Image
+              style={styles.imageOne}
+              source={{
+                uri: "https://lp-cms-production.imgix.net/2019-06/a2aa48e66952bf8816898991072e32f5-macritchie-reservoir.jpg",
+              }}
+            />
+          </View>
+          <View style={{ flexDirection: "row" }}>
+            <View>
+              <Text style={styles.textRatingOne}>Ratings:</Text>
+              <View
+                style={{ flexDirection: "row", marginLeft: 20, marginTop: 6 }}
+              >
+                <FontAwesome name="star" size={24} color="black" />
+                <FontAwesome name="star" size={24} color="black" />
+                <FontAwesome name="star" size={24} color="black" />
+                <FontAwesome name="star" size={24} color="black" />
+                <FontAwesome name="star-half-full" size={24} color="black" />
+              </View>
+            </View>
+            <View>
+              <Text style={styles.textPeopleOne}>People at location:</Text>
+              <Text
+                style={{
+                  marginLeft: 50,
+                  fontSize: 30,
+                  fontWeight: "bold",
+                  marginTop: 0,
+                }}
+              >
+                69
+              </Text>
+            </View>
+          </View>
+        </View>
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => navigation.navigate("DiscoverTwo")}
         style={styles.DiscoverTwo}
       >
         <Text style={styles.textTitleTwo}>Title</Text>
-        <Text style={styles.textDescriptionTwo}>Description</Text>
+        <Text style={styles.textDescriptionTwo}>Description.</Text>
         <Text style={styles.textRatingTwo}>
           Ratings:
           <FontAwesome name="star" size={24} color="black" />
@@ -104,28 +142,31 @@ const styles = StyleSheet.create({
   textTitleOne: {
     fontWeight: "bold",
     fontSize: 30,
-    textAlign: "left",
+    textAlign: "center",
     marginTop: 20,
-    marginLeft: 20,
   },
   textDescriptionOne: {
     marginTop: 20,
-    marginLeft: 20,
     fontSize: 15,
   },
   textRatingOne: {
     textAlign: "left",
-    marginTop: 120,
+    marginTop: 15,
     marginLeft: 20,
     fontSize: 25,
   },
 
   textPeopleOne: {
     textAlign: "left",
-    marginBottom: 20,
-    marginLeft: 20,
-    marginTop: 8,
+    marginBottom: 5,
+    marginLeft: 40,
+    marginTop: 15,
     fontSize: 20,
+  },
+  imageOne: {
+    height: 120,
+    width: 170,
+    marginLeft: 10,
   },
   textTitleTwo: {
     fontWeight: "bold",
