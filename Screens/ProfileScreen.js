@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 });
+
 const Stack = createStackNavigator();
 
 export default function ProfileStack() {
