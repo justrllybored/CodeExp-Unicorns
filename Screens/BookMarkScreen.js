@@ -12,23 +12,23 @@ import { Foundation } from "@expo/vector-icons";
 import * as SQLite from "expo-sqlite";
 import { createStackNavigator } from "@react-navigation/stack";
 
-const db = SQLite.openDatabase("BookMarks.db");
-const SAMPLE_BookMarks = [
+const db = SQLite.openDatabase("BookMarkss.db");
+const SAMPLE_BookMarkss = [
   { title: "Macritchie", id: "0", done: false },
   { title: "Japanese Cemetary Park", id: "1", done: false },
   { title: "Little India", id: "2", done: false },
   { title: "Conney Island", id: "3", done: false },
 ];
 
-function BookMarksScreen({ route, navigation }) {
-  const [BookMarks, setBookMarks] = useState(SAMPLE_BookMarks);
+function BookMarkssScreen({ route, navigation }) {
+  const [BookMarkss, setBookMarkss] = useState(SAMPLE_BookMarkss);
 
-  function refreshBookMarks() {
+  function refreshBookMarkss() {
     db.transaction((tx) => {
       tx.executeSql(
-        "SELECT * FROM BookMarks",
+        "SELECT * FROM BookMarkss",
         null,
-        (txObj, { rows: { _array } }) => setBookMarks(_array),
+        (txObj, { rows: { _array } }) => setBookMarkss(_array),
         (txObj, error) => console.log("Error ", error)
       );
     });
@@ -39,14 +39,14 @@ function BookMarksScreen({ route, navigation }) {
     db.transaction(
       (tx) => {
         tx.executeSql(`
-        CREATE TABLE IF NOT EXISTS BookMarks
+        CREATE TABLE IF NOT EXISTS BookMarkss
         (id INTEGER PRIMARY KEY AUTOINCREMENT,
           title TEXT,
           done INT);
       `);
       },
       null,
-      refreshBookMarks
+      refreshBookMarkss
     );
   }, []);
 
@@ -71,24 +71,24 @@ function BookMarksScreen({ route, navigation }) {
     if (route.params?.todoText) {
       const newBookMark = {
         title: route.params.todoText,
-        id: BookMarks.length.toString(),
+        id: BookMarkss.length.toString(),
         done: false,
       };
-      setBookMarks([...BookMarks, newBookMark]);
+      setBookMarkss([...BookMarkss, newBookMark]);
       // const newBookMark = {
       //   title: route.params.todoText,
-      //   id: BookMarks.length.toString(),
+      //   id: BookMarkss.length.toString(),
       //   done: false,
       // };
-      // setBookMarks([...BookMarks, newBookMark]);
+      // setBookMarkss([...BookMarkss, newBookMark]);
       db.transaction(
         (tx) => {
-          tx.executeSql("INSERT INTO BookMarks (done, title) VALUES (0, ?)", [
+          tx.executeSql("INSERT INTO BookMarkss (done, title) VALUES (0, ?)", [
             route.params.todoText,
           ]);
         },
         null,
-        refreshBookMarks
+        refreshBookMarkss
       );
     }
   }, [route.params?.todoText]);
@@ -102,7 +102,7 @@ function BookMarksScreen({ route, navigation }) {
   }
   return (
     <View style={styles.container}>
-      <FlatList style={styles.list} data={BookMarks} renderItem={renderItem} />
+      <FlatList style={styles.list} data={BookMarkss} renderItem={renderItem} />
     </View>
   );
 }
@@ -117,21 +117,20 @@ function AddScreen({ navigation }) {
         onChangeText={(text) => setTodoText(text)}
       />
       <Button
-        onPress={() => navigation.navigate("BookMarks", { todoText })}
+        onPress={() => navigation.navigate("BookMarkss", { todoText })}
         title="Submit"
       />
       <Button onPress={() => navigation.goBack()} title="Cancel" />
-      <Text>{todoText}</Text>
     </View>
   );
 }
 
 const Stack = createStackNavigator();
 
-export default function BookMarkStack() {
+export default function BookMarksstack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="BookMarks" component={BookMarksScreen} />
+      <Stack.Screen name="BookMarkss" component={BookMarkssScreen} />
       <Stack.Screen name="Add" component={AddScreen} />
     </Stack.Navigator>
   );

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Text, View, StyleSheet, Image } from "react-native";
+import { Text, View, StyleSheet, Image, Button } from "react-native";
 
 export default function DiscoverThree() {
   return (
@@ -23,11 +23,16 @@ export default function DiscoverThree() {
       <Text
         style={{ marginTop: 20, fontSize: 20, textAlign: "left", margin: 10 }}
       >
-        Japanese Cemetery Park is an important location for the Japanese legacy in Singapore. Covering over 30,000 meters of land, the park is a beautiful showcase of Japanese culture and beauty. Please be reminded to be respectful within the park.
+        Japanese Cemetery Park is an important location for the Japanese legacy
+        in Singapore. Covering over 30,000 meters of land, the park is a
+        beautiful showcase of Japanese culture and beauty. Please be reminded to
+        be respectful within the park.
       </Text>
       <Text style={{ fontsize: 15, margin: 10 }}>
-        ALERT!: The park will be undergoing renovations from the 13th of June to the 20th of June.
+        ALERT!: The park will be undergoing renovations from the 13th of June to
+        the 20th of June.
       </Text>
+      <Button title="Add to Bookmarks"></Button>
     </View>
   );
 }
