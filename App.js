@@ -9,14 +9,6 @@ import ProfileScreen from "./Screens/ProfileScreen";
 import DiscoverScreen from "./Screens/DiscoverScreen";
 import BookMarkScreen from "./Screens/BookMarkScreen";
 
-function SettingsScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Settings!</Text>
-    </View>
-  );
-}
-
 const Tab = createBottomTabNavigator();
 
 export default function App() {
@@ -56,8 +48,8 @@ export default function App() {
       >
         <Tab.Screen name="Map" component={MapScreen} />
         <Tab.Screen name="Discover" component={DiscoverScreen} />
-        <Tab.Screen name="Profile" component={ProfileScreen} />
         <Tab.Screen name="BookMarks" component={BookMarkScreen} />
+        <Tab.Screen name="Profile" component={ProfileScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );

@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#eef5db",
     alignItems: "center",
     justifyContent: "center",
+    flex: 1,
   },
   DiscoverOne: {
   backgroundColor: "#ffa270",
