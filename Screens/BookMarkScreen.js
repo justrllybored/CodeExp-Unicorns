@@ -29,7 +29,7 @@ function BookMarkssScreen({ route, navigation }) {
         "SELECT * FROM BookMarkss",
         null,
         (txObj, { rows: { _array } }) => setBookMarkss(_array),
-        (txObj, error) => console.log("Error ", error)
+        (txObj, error) => console.log("Error", error)
       );
     });
   }

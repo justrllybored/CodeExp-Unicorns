@@ -85,8 +85,8 @@ export default function CloseFriendListScreen() {
           bites!
         </Text>
 
-        <Text style={{ fontSize: 20, marginTop: 6 }}>Is this Place safe?</Text>
-        <Button title="Click on me to find out!!!" onPress={simpleAlert} />
+        <Text style={{ fontSize: 20, marginTop: 6 }}>Alert!</Text>
+        <Button title="Problem with Macritchie Resevoir" onPress={simpleAlert} />
       </View>
     </View>
   );

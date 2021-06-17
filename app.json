@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "CODE_EXP-v1.1",
+    "name": "SG Explore!",
     "slug": "codexp11",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/appicon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/appicon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -21,7 +21,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/appicon.png",
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.samtestbuild.sgdiscovery"

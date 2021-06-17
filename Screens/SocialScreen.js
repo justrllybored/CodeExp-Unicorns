@@ -29,7 +29,7 @@ function SocialScreen({ navigation }) {
         Add friends using your secret code below to organize fabulous trips to
         the wild outdoors of Singapore with them!
       </Text>
-      <Text style={{ fontsize: 15, margin: 10 }}>Code: X462eye#%</Text>
+      <Text style={{ fontSize: 15, margin: 10 }}>Code: X462eye#%</Text>
 
       <Text
         style={{
@@ -67,17 +67,17 @@ function FriendListScreen({ navigation }) {
         style={styles.friendGroupOne}
         onPress={() => navigation.navigate("CloseFriendList")}
       >
-        <Text style={{ textAlign: "center", fontSize: "50" }}>
+        <Text style={{ textAlign: "center", fontSize: 50 }}>
           Close Friends
         </Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.friendGroupTwo}>
-        <Text style={{ textAlign: "center", fontSize: "30" }}>
+        <Text style={{ textAlign: "center", fontSize: 30 }}>
           Secondary School Friends
         </Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.friendGroupTwo}>
-        <Text style={{ textAlign: "center", fontSize: "30" }}>
+        <Text style={{ textAlign: "center", fontSize: 30 }}>
           Click to add more
         </Text>
       </TouchableOpacity>

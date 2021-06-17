@@ -31,64 +31,6 @@ function DiscoverScreen({ navigation }) {
           </TouchableOpacity>
 
           <TouchableOpacity
-            onPress={() => navigation.navigate("DiscoverTwo")}
-            style={styles.DiscoverTwo}
-          >
-            <View style={{ flexDirection: "column" }}>
-              <Text style={styles.textTitleTwo}>Botanic Gardens</Text>
-              <View style={{ flexDirection: "row", marginTop: 10 }}>
-                <View style={{ marginLeft: 20 }}>
-                  <Text style={styles.textDescriptionTwo}>Started in 1822</Text>
-                  <Text>by Sir Stamford</Text>
-                  <Text>Raffles, the Botanic </Text>
-                  <Text>Gardens is a testa</Text>
-                  <Text>-ment to Singapore's</Text>
-                  <Text>(Click to find out</Text>
-                  <Text>more about this place)</Text>
-                </View>
-                <Image
-                  style={styles.imageTwo}
-                  source={{
-                    uri: "https://www.nparks.gov.sg/-/media/nparks-real-content/gardens-parks-and-nature/sg-botanic-gardens/sbgtanglin_gate.jpg",
-                  }}
-                />
-              </View>
-              <View style={{ flexDirection: "row" }}>
-                <View>
-                  <Text style={styles.textRatingTwo}>Ratings:</Text>
-                  <View
-                    style={{
-                      flexDirection: "row",
-                      marginLeft: 20,
-                      marginTop: 6,
-                    }}
-                  >
-                    <FontAwesome name="star" size={24} color="black" />
-                    <FontAwesome name="star" size={24} color="black" />
-                    <FontAwesome name="star" size={24} color="black" />
-                    <FontAwesome name="star" size={24} color="black" />
-                    <FontAwesome name="star" size={24} color="black" />
-                  </View>
-                </View>
-                <View>
-                  <Text style={styles.textPeopleTwo}>People at location:</Text>
-                  <Text
-                    style={{
-                      marginLeft: 50,
-                      marginLeft: 50,
-                      fontSize: 30,
-                      fontWeight: "bold",
-                      marginTop: -10,
-                      textAlign: "right",
-                    }}
-                  >
-                    30
-                  </Text>
-                </View>
-              </View>
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity
             onPress={() => navigation.navigate("DiscoverOne")}
             style={styles.DiscoverOne}
           >
@@ -148,6 +90,65 @@ function DiscoverScreen({ navigation }) {
                     }}
                   >
                     38
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={() => navigation.navigate("DiscoverTwo")}
+            style={styles.DiscoverTwo}
+          >
+            <View style={{ flexDirection: "column" }}>
+              <Text style={styles.textTitleTwo}>Botanic Gardens</Text>
+              <View style={{ flexDirection: "row", marginTop: 10 }}>
+                <View style={{ marginLeft: 20 }}>
+                  <Text style={styles.textDescriptionTwo}>Started in 1822</Text>
+                  <Text>by Sir Stamford</Text>
+                  <Text>Raffles, the Botanic </Text>
+                  <Text>Gardens is a testa</Text>
+                  <Text>-ment to Singapore's</Text>
+                  <Text>(Click to find out</Text>
+                  <Text>more about this place)</Text>
+                </View>
+                <Image
+                  style={styles.imageTwo}
+                  source={{
+                    uri: "https://www.nparks.gov.sg/-/media/nparks-real-content/gardens-parks-and-nature/sg-botanic-gardens/sbgtanglin_gate.jpg",
+                  }}
+                />
+              </View>
+              <View style={{ flexDirection: "row" }}>
+                <View>
+                  <Text style={styles.textRatingTwo}>Ratings:</Text>
+                  <View
+                    style={{
+                      flexDirection: "row",
+                      marginLeft: 20,
+                      marginTop: 6,
+                    }}
+                  >
+                    <FontAwesome name="star" size={24} color="black" />
+                    <FontAwesome name="star" size={24} color="black" />
+                    <FontAwesome name="star" size={24} color="black" />
+                    <FontAwesome name="star" size={24} color="black" />
+                    <FontAwesome name="star" size={24} color="black" />
+                  </View>
+                </View>
+                <View>
+                  <Text style={styles.textPeopleTwo}>People at location:</Text>
+                  <Text
+                    style={{
+                      marginLeft: 50,
+                      marginLeft: 50,
+                      fontSize: 30,
+                      fontWeight: "bold",
+                      marginTop: -10,
+                      textAlign: "right",
+                    }}
+                  >
+                    30
                   </Text>
                 </View>
               </View>
