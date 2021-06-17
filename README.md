@@ -8,8 +8,10 @@ Run at your own risk there are probably some bugs here and there<br>
 App code - Code for SGExplore!<br>
 SGExplore! App cat01team01.pdf - Why our app is around and what is it for<br>
 SGExplore!AppShowcase.mp4 - Showcase of our app<br>
+<br>
+<br>
 
-Members:<br>
+<h3>Members:</h3><br>
 Samuel<br>
 Zheng Jia<br>
 Xin Yan<br>
