@@ -15,10 +15,8 @@ Samuel<br>
 Zheng Jia<br>
 Xin Yan<br>
 Reyes<br>
-<br>
-<h3>Date:</h3>17062021<br>
 
-**Instructions to run**
+**Instructions to run**<br>
 
 
     git clone https://github.com/tancysam/CodeExp-Unicorns.git<br>
