@@ -17,7 +17,7 @@ Xin Yan<br>
 Reyes<br>
 
 <br>
-**Instructions to run**
+<h3>Instructions to run</h3>
 
 
     git clone https://github.com/tancysam/CodeExp-Unicorns.git<br>
