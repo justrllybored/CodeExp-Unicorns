@@ -1,4 +1,4 @@
-<h1 >CodeExp - Team Unicorns</h1>
+<h1 >CodeExp - SGExplore! App</h1>
 <h3>
 A couple of kids new to code trying to code an entire app<br>
 Run at your own risk there are probably some bugs here and there<br>
