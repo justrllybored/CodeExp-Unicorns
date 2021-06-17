@@ -5,9 +5,9 @@ Run at your own risk there are probably some bugs here and there<br>
 </h3>
 
 <h2>Files included</h2>
-App code - Code for SGExplore!<br>
-SGExplore! App cat01team01.pdf - Why our app is around and what is it for<br>
-SGExplore!AppShowcase.mp4 - Showcase of our app<br>
+<h4>App code</h4> - Code for SGExplore!<br>
+<h4>SGExplore! App cat01team01.pdf</h4> - Why our app is around and what is it for<br>
+<h4>SGExplore!AppShowcase.mp4</h4> - Showcase of our app<br>
 <br>
 <br>
 <h3>Members:</h3>
