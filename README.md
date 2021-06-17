@@ -10,14 +10,13 @@ SGExplore! App cat01team01.pdf - Why our app is around and what is it for<br>
 SGExplore!AppShowcase.mp4 - Showcase of our app<br>
 <br>
 <br>
-
-<h3>Members:</h3><br>
+<h3>Members:</h3>
 Samuel<br>
 Zheng Jia<br>
 Xin Yan<br>
 Reyes<br>
-
-17062021<br>
+<br>
+<h3>Date:</h3>17062021<br>
 
 **Instructions to run**
 
