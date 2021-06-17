@@ -15,7 +15,7 @@ Reyes<br>
 Instructions to run
 
 
-  git clone https://github.com/tancysam/CodeExp-Unicorns.git<br>
-  npm install<br>
+    git clone https://github.com/tancysam/CodeExp-Unicorns.git<br>
+    npm install<br>
 
 
