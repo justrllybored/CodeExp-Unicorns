@@ -6,6 +6,9 @@ Zheng Jia<br>
 Xin Yan<br>
 Reyes<br>
 
-Finalised 17062021<br>
+17062021<br>
 
-A couple of newbies to code trying to code an entire new app
+A couple of kids new to code trying to code an entire app
+Run at your own risk there are probably some bugs here and there
+
+
